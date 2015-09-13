@@ -1,0 +1,316 @@
+<!--
+Topics Covered:
+Tables
+Forms
+Media: Audio and Video
+Inline Styles
+Ids and Classes
+Styles in Head Tag
+Introducing CSS
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Level 3</title>
+    <style media="screen">
+        #header {
+          font-family: sans-serif;
+          font-size: 30px;
+          background-color: blue;
+          color: white;
+        }
+        .para {
+          color: red;
+          font-family: monospace;
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <!-- Tables -->
+    <table>
+      <tr>
+        <th>
+          Serial No
+        </th>
+        <th>
+          Name
+        </th>
+        <th>
+          Age
+        </th>
+        <th>
+          Branch
+        </th>
+      </tr>
+      <tr>
+        <td>
+          1
+        </td>
+        <td>
+          Harish Kandala
+        </td>
+        <td>
+          20
+        </td>
+        <td>
+          CSE
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2
+        </td>
+        <td>
+          Siddhant Somani
+        </td>
+        <td>
+          21
+        </td>
+        <td>
+          CSE
+        </td>
+      </tr>
+      <tr>
+        <td>
+          3
+        </td>
+        <td>
+          Krishna
+        </td>
+        <td>
+          25
+        </td>
+        <td>
+          ECE
+        </td>
+      </tr>
+      <tr>
+        <td>
+          4
+        </td>
+        <td>
+          Suhas
+        </td>
+        <td>
+          18
+        </td>
+        <td>
+          Mechanical
+        </td>
+      </tr>
+      <tr>
+        <td>
+          5
+        </td>
+        <td>
+          Dinesh
+        </td>
+        <td>
+          25
+        </td>
+        <td>
+          Civil
+        </td>
+      </tr>
+    </table>
+    <br>
+    <table width="50%" cellpadding="10" cellspacing="5" border="1" rules="rows">
+      <caption><h3>Student Details</h3></caption>
+      <thead>
+        <tr>
+          <td colspan="6">
+            Table Header
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>
+            Serial No
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Age
+          </th>
+          <th>
+            Branch
+          </th>
+          <th colspan="2">
+            Phone Numbers
+          </th>
+        </tr>
+        <tr>
+          <td>
+            1
+          </td>
+          <td>
+            Harish Kandala
+          </td>
+          <td>
+            20
+          </td>
+          <td>
+            CSE
+          </td>
+          <td>
+            1234567890
+          </td>
+          <td>
+            9876543210
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td>
+            Siddhant Somani
+          </td>
+          <td>
+            21
+          </td>
+          <td>
+            CSE
+          </td>
+          <td>
+            9998887770
+          </td>
+          <td>
+            9545650938
+          </td>
+        </tr>
+        <tr>
+          <td>
+            3
+          </td>
+          <td>
+            Krishna
+          </td>
+          <td>
+            25
+          </td>
+          <td>
+            ECE
+          </td>
+          <td>
+            1234567890
+          </td>
+          <td>
+            1509758302
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4
+          </td>
+          <td>
+            Suhas
+          </td>
+          <td>
+            18
+          </td>
+          <td>
+            Mechanical
+          </td>
+          <td>
+            1234567890
+          </td>
+          <td>
+            9876543210
+          </td>
+        </tr>
+        <tr>
+          <td>
+            5
+          </td>
+          <td>
+            Dinesh
+          </td>
+          <td>
+            25
+          </td>
+          <td>
+            Civil
+          </td>
+          <td>
+            5432198760
+          </td>
+          <td>
+            3334445556
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">
+            Table Footer
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <br>
+    <br>
+
+    <!-- Forms -->
+    <form action="#" method="post">
+      <label for="username">User Name:</label>
+      <input type="text" id="username" name="username" value="" placeholder="Your User Name"><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" value="" placeholder="Password"><br>
+      <label for="reenterpass">Reenter Password:</label>
+      <input type="password" id="reenterpass" name="reenterpass" value="" placeholder="Password again.."><br>
+      <input type="submit" name="submit" value="Submit Form">
+      <input type="reset" value="Cancel">
+      <br>
+      <br>
+      Choose your favorite flavor:
+      <input type="checkbox" name="flavours" value="chocolate" checked="checked"/>Chocolate
+      <input type="checkbox" name="flavours" value="vanilla"/>Vanilla
+      <input type="checkbox" name="flavours" value="strawberry"/>Strawberry
+      <br>
+      Choose your favorite color:
+      <input type="radio" name="color" value="red"/>Red
+      <input type="radio" name="color" value="green"/>Green
+      <input type="radio" name="color" value="blue"/>Blue
+      <br>
+      Choose your Country:
+      <select name="dropdown">
+        <option value="1">India</option>
+        <option value="2">USA</option>
+        <option value="3">Canada</option>
+        <option value="4">China</option>
+      </select>
+      <br>
+      <br>
+      <textarea name="textarea" rows="8" cols="40"></textarea>
+      <button type="button" name="button">Click Me!!</button>
+    </form>
+
+    <!-- Media: Audio and Video-->
+    <audio controls>
+      <source src="media/audio.mp3" type="audio/mpeg">
+        Your browser doesn't support audio
+    </audio>
+    <br>
+    <br>
+    <video width="700" controls poster="img/html.jpg">
+      <source src="../../../What Most Schools Don't Teach.mp4" type="video/mp4">
+    </video>
+
+    <!-- Inline Styles -->
+    <p style="color: Red">Red</p>
+    <p style="color: blue">Blue</p>
+    <p style="font-family: sans-serif; font-size: 25px; color: green">New font</p>
+
+    <!-- Styles in Head Tag -->
+    <h3 id="header">Header which is styled from style tag in header</h3>
+    <p class="para">All these paragraphs have same style as they have same class</p>
+    <p class="para">this one</p>
+    <p class="para">this one too</p>
+  </body>
+</html>

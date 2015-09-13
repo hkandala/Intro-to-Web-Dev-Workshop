@@ -1,0 +1,25 @@
+<!--
+DOM Handling
+Form Validation
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Level 6</title>
+    <link rel="stylesheet" href="css/styles.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <h2>Fill the form</h2>
+    <form class="myForm" action="#" method="post" name="myForm" onsubmit="return validateForm();">
+      <input type="text" id="name" name="name" value="" placeholder="Enter your name">
+      <input type="text" id="phoneno" name="phoneno" value="" placeholder="Enter your phone number">
+      <textarea id="about" name="about" placeholder="Enter a few lines about you..."></textarea>
+      <input type="submit" name="submit" value="Submit">
+      <p id="feedback"></p>
+    </form>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>

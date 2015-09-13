@@ -1,0 +1,78 @@
+/* This is how you comment in css */
+
+body {
+  background-color: #eeeeee;
+  font-family: sans-serif;
+  margin: 0px;
+  height: 1000px;
+}
+
+.outer {
+    background-color: #9e9e9e;
+    position: relative;
+    top: 100px;
+}
+
+.wrapper {
+  width: 500px;
+  height: 370px;
+  background-color: white;
+  color: #009688;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 50px;
+  left: -100px;
+  z-index: 7;
+}
+
+#two.wrapper {
+  position: absolute;
+  top: 200px;
+  left: 1100px;
+}
+
+#three.wrapper {
+    position: relative;
+    z-index: 5;
+    top: -100px;
+    left: 500px;
+}
+
+.wrapper img {
+  width: 100%;
+}
+
+.wrapper h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.center-wrapper {
+  width: 500px;
+  background-color: #F44336;
+  border: 5px solid #009688;
+  padding: 30px;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.center-wrapper .left {
+  padding: 30px;
+  color: white;
+  background-color: #009688;
+  font-family:sans-serif;
+  width: 100px;
+  float: left;
+}
+
+.center-wrapper .right {
+  padding: 30px;
+  color: white;
+  background-color: #009688;
+  font-family:sans-serif;
+  width: 100px;
+  float: right;
+}

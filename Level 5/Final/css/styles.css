@@ -1,0 +1,99 @@
+.subscribe {
+  display: block;
+  position: relative;
+  left: 0px;
+  width: 170px;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #009688;
+  border-radius: 3px;
+  font-family: sans-serif;
+  color: #009688;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.5s, color 0.5s, left 0.5s;
+}
+
+.subscribe:hover {
+  background-color: #009688;
+  color: white;
+  left: 10px;
+  transition: background-color 0.5s, color 0.5s, left 0.5s;
+}
+
+.subscribe:active {
+  background-color: #f44336;
+  color: white;
+}
+
+.subscribe:visited {
+  border-color: #f44336;
+}
+
+.textbox {
+  font-family: sans-serif;
+  background-color: #eeeeee;
+  padding: 15px;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.textbox p {
+  color: blue;
+}
+
+.textbox p:first-child {
+  color: red;
+}
+
+.textbox p:first-child::first-line {
+  font-weight: 600;
+}
+
+.textbox p:last-child {
+  color: green;
+}
+
+.textbox p:last-child::first-letter {
+  font-size: 20px;
+  color: #212121;
+}
+
+.object {
+  font-family: sans-serif;
+  color:white;
+  width: 180px;
+  border-radius: 2px;
+  padding: 25px;
+  position: relative;
+  animation: sample 5s infinite;
+}
+
+@keyframes sample {
+  0% {
+    background-color: red;
+    top: 10px;
+    left: 0px;
+  }
+  25% {
+    background-color: green;
+    top: 25px;
+    left: 50px;
+  }
+  50% {
+    background-color: blue;
+    top: 50px;
+    left: 25px;
+  }
+  100% {
+    background-color: red;
+    top: 10px;
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .textbox {
+    background-color: #78909c;
+  }
+}
